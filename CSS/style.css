@@ -18,6 +18,8 @@
 }
 .container{
     display: flex;
+    justify-content: center;
+    align-items: center;
     
 }
 .card{
@@ -52,3 +54,113 @@
     margin: 15px;
     
 }
+/* Our story */
+.story-title {
+   text-align: center;
+    color: orange;
+}
+ .stories{
+      display: grid;
+      grid-template-columns: repeat(3,1fr);
+      justify-content: center;
+      align-items: center;
+      
+  }
+
+  .story{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 80px;
+  }
+/* Our chef */
+.ourChef{
+    background-image: url(image/pngtree-lahua-simple-coffee-banner-image_178788\ \(1\).jpg); 
+    background-size: cover; 
+    background-position: center; 
+    height: 600px;
+    padding: 50px 200px;
+  text-align: center;
+  }
+  .ourChefCards{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: space-evenly;
+    justify-items: center;
+    align-content: space-evenly;
+    align-items: center;
+  }
+  .chef{
+    width: 100%;
+    height: 300px;
+  }
+  .chefCard{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 400px;
+  }
+  .chefCard h1 {
+    margin-top: 0%;
+  }
+  .firstCard{
+    background-image: url('https://thumbs.dreamstime.com/z/male-chef-kitchen-utensils-white-background-male-chef-kitchen-utensils-white-background-151367292.jpg') ; 
+    box-shadow:inset 0 0 0 2000px rgba(255, 0, 150, 0.3);
+    background-size: cover; 
+    background-position: center; 
+    width: 85%;
+    height: 300px;
+    
+  }
+  .firstCard  p{
+    text-align: center;
+  }
+ /* --------------- Media Query--------------- */
+  @media (max-width:600px) {
+       /* About us css*/
+       .container{
+        flex-direction: column;
+        margin-bottom: 50px;
+       }
+       .full-container{
+        background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(../images/bg.jpg);
+        background-size: cover; 
+        background-position: center; 
+        height: auto;
+        padding: 20px;
+        /* margin: 20px; */
+       
+    }
+
+    /* Our story css */
+    .stories{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        justify-content: center;
+        align-items: center;
+        
+    }
+   
+
+    /* Our chef css */
+    .ourChef{
+        background-image: url(image/pngtree-lahua-simple-coffee-banner-image_178788\ \(1\).jpg); 
+        background-size: cover; 
+        background-position: center; 
+        height: auto;
+      
+        padding: 0px 10px;
+      }
+  
+      .ourChefCards{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        justify-content: space-evenly;
+        justify-items: center;
+        align-content: space-evenly;
+        align-items: center;
+      }
+  }
