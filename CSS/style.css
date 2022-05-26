@@ -109,7 +109,7 @@
        
 }
 .card-title{
-    color: white;
+    color: rgb(241, 151, 34);
     text-align: center;
 }
 .card-description{
@@ -123,6 +123,8 @@
 .story-title {
    text-align: center;
     color: orange;
+    margin-top: 100px;
+    margin-bottom: 0;
 }
  .stories{
       display: grid;
@@ -140,6 +142,10 @@
       justify-content: center;
       padding:20px;
   }
+  .story h3{
+    color:rgb(241, 151, 34) ;
+    font-size: 35px;
+  }
   .story p{
     text-align: center;
   }
@@ -151,6 +157,10 @@
     height: 550px;
     padding: 50px 100px;
   text-align: center;
+  }
+  .ourChef h1{
+    color: white;
+    font-size: 40px;
   }
   .ourChefCards{
     display: grid;
@@ -167,7 +177,7 @@
     border-radius: 5px;
   }
   .chef-name {
-    color: white;
+    color: wheat;
     margin-bottom: 0;
 
   }
@@ -199,15 +209,20 @@
   .firstCard  p{
     text-align: center;
     color: white;
+    margin-top: 50px;
+    padding: 10px;
   }
 
 /* Customer review */
-/* .review-container{
-    background: url(../images/review-back.jpg);
-    padding: 120px;
-} */
+.review-container{
+   
+  margin-top: 100px;
+  margin-bottom: 90px;
+}
 .review-title{
-    text-align: center;
+  text-align: center;
+ 
+   
     color: rgb(241, 151, 34);
 }
 .review-description{
